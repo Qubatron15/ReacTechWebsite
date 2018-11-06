@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    box-shadow: 0 2px 120px -40px;
+    
+    &__logo {
+        display: block;
+        margin: auto;
+        padding: 150px;
+        margin: auto;
+        text-align: center;
+        
+        img {
+            height: 40vh;
+        }
+    }
+}

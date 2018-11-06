@@ -1,1 +1,9 @@
-@import "header/header.scss";
+@import "palette.scss";
+@import "header.scss";
+@import "navigation.scss";
+
+.content {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+}
