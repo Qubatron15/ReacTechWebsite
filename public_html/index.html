@@ -8,28 +8,68 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-        <section class="header">
+        <section id="header">
+            <!--<h1>header</h1>-->
             <div class="header__logo">
                 <img src="img/reactech-loco-color.png"
                      alt="reactech logo">
             </div>
         </section>
 
-        <section class="navigation">
+        <section id="navigation">
             <ul class="content">
-                <li><a href="#" class="selected"><p>o firmie</p></a></li>
-                <li><a href="#"><p>projekty</p></a></li>
-                <li><a href="#"><p>współpraca</p></a></li>
-                <li class="pull-right"><a href="#"><p>kontakt</p></a></li>
+                <li><a href="#header"><p>home</p></a></li>
+                <li><a href="#navigation"><p>o firmie</p></a></li>
+                <li><a href="#projects"><p>projekty</p></a></li>
+                <li><a href="#collaboration"><p>współpraca</p></a></li>
+                <li class="pull-right"><a href="#contact"><p>kontakt</p></a></li>
             </ul>
         </section>
 
-<!--        <section id="content">
+        <section id="about">
+            <h2>about</h2>
             This is content
         </section>
 
-        <section id="footer">
+        <section id="projects">
+            <h2>projects</h2>
+            This is content
+        </section>
+
+        <section id="collaboration">
+            <h2>projects</h2>
+            This is content
+        </section>
+
+        <section id="contact">
+            <h2>contact</h2>
             This is footer
-        </section>-->
+        </section>
+
+
+        <script>
+            let mainNavLinks = document.querySelectorAll("#navigation ul li a");
+                let mainSections = document.querySelectorAll("section");
+
+            let lastId;
+            let cur = [];
+
+            window.addEventListener("scroll", event => {
+                let fromTop = window.scrollY;
+
+                mainNavLinks.forEach(link => {
+                    let section = document.querySelector(link.hash);
+
+                    if (
+                            section.offsetTop <= fromTop &&
+                            section.offsetTop + section.offsetHeight > fromTop
+                            ) {
+                        link.classList.add("selected");
+                    } else {
+                        link.classList.remove("selected");
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

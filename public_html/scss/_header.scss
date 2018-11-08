@@ -1,8 +1,8 @@
-.header {
+#header {
     width: 100%;
     box-shadow: 0 100px 143px -100px $shadow-grey;
     
-    &__logo {
+    .header__logo {
         display: block;
         margin: auto;
         padding: 150px;
