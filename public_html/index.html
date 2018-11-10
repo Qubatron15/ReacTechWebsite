@@ -9,7 +9,6 @@
     </head>
     <body>
         <section id="header">
-            <!--<h1>header</h1>-->
             <div class="header__logo">
                 <img src="img/reactech-loco-color.png"
                      alt="reactech logo">
@@ -17,18 +16,22 @@
         </section>
 
         <section id="navigation">
-            <ul class="content">
-                <li><a href="#header"><p>home</p></a></li>
-                <li><a href="#navigation"><p>o firmie</p></a></li>
-                <li><a href="#projects"><p>projekty</p></a></li>
-                <li><a href="#collaboration"><p>współpraca</p></a></li>
-                <li class="pull-right"><a href="#contact"><p>kontakt</p></a></li>
-            </ul>
+            <nav id="navigation__links-container">
+                <ul class="content">
+                    <li><a href="#header"><p>home</p></a></li>
+                    <li><a href="#navigation"><p>o firmie</p></a></li>
+                    <li><a href="#projects"><p>projekty</p></a></li>
+                    <li><a href="#collaboration"><p>współpraca</p></a></li>
+                    <li class="pull-right"><a href="#contact"><p>kontakt</p></a></li>
+                </ul>
+            </nav>
         </section>
 
-        <section id="about">
-            <h2>about</h2>
-            This is content
+        <section id="about" class="content">
+            <h2>o firmie</h2>
+            <p>Lorem ipsum dolor sit amet, sea ei dico utroque oportere. Ex his exerci aliquid inimicus. Eum ut errem adipiscing, ut vix suas eros, et sit tollit apeirian sensibus. Nobis utinam cotidieque ne nec. Ex eum legimus dolorem, an sit quando commodo, ad vivendo lobortis vel.</p>
+
+            <p>Sea soleat praesent in, ne saepe voluptua sit. Quo ut iudico regione efficiantur. No pro lorem sonet interesset, natum illum fugit vel id. Te per invidunt erroribus intellegat. Id aliquam patrioque nam, et nulla semper intellegam mel. Graeco copiosae cu vis. Ei est illum congue, eros mentitum qui ut.</p>
         </section>
 
         <section id="projects">
@@ -49,10 +52,15 @@
 
         <script>
             let mainNavLinks = document.querySelectorAll("#navigation ul li a");
-                let mainSections = document.querySelectorAll("section");
+            let mainSections = document.querySelectorAll("section");
 
             let lastId;
             let cur = [];
+            
+            let navbar = document.getElementById("navigation__links-container");
+            let sticky = navbar.offsetTop;
+
+
 
             window.addEventListener("scroll", event => {
                 let fromTop = window.scrollY;
@@ -69,7 +77,30 @@
                         link.classList.remove("selected");
                     }
                 });
+                
+                
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("fixed-top");
+                } else {
+                    navbar.classList.remove("fixed-top");
+                }
+
             });
+
+
+
+
+//            window.onscroll = function () {
+//                myFunction()
+//            };
+
+
+// Get the offset position of the navbar
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+//            function myFunction() {
+                
+//            }
         </script>
     </body>
 </html>
