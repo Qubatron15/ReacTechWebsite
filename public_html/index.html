@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     </head>
     <body>
         <section id="header">
@@ -19,7 +20,7 @@
             <nav id="navigation__links-container">
                 <ul class="content">
                     <li><a href="#header"><p>home</p></a></li>
-                    <li><a href="#navigation"><p>o firmie</p></a></li>
+                    <li><a href="#about"><p>o firmie</p></a></li>
                     <li><a href="#projects"><p>projekty</p></a></li>
                     <li><a href="#collaboration"><p>współpraca</p></a></li>
                     <li class="pull-right"><a href="#contact"><p>kontakt</p></a></li>
@@ -80,9 +81,9 @@
                 
                 
                 if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("fixed-top");
+                    navbar.classList.add("navigation-fixed-top");
                 } else {
-                    navbar.classList.remove("fixed-top");
+                    navbar.classList.remove("navigation-fixed-top");
                 }
 
             });
