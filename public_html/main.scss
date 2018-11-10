@@ -13,13 +13,24 @@ html {
     font-family: sans-serif;
 }
 
-section h2 {
-    padding-top: 100px;
-    font-size: 35px;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    color: $navigation-text;
+section {
+    h2 {
+        padding: 140px 0 10px;
+        margin: 0 auto 80px;
+        font-size: 35px;
+        width: 30%;
+        text-align: center;
+        color: $navigation-text;
+        box-shadow: 0 55px 68px -55px $shadow-grey;
+        border-bottom: 1px solid $logo-dark-blue;
+    }
+
+    p {
+        line-height: 2;
+        text-align: justify;
+        font-size: 20px;
+        margin: 30px 0;
+    }
 }
 
 #about, #projects, #collaboration, #contact {
