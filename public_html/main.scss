@@ -1,6 +1,7 @@
 @import "scss/palette.scss";
 @import "scss/header.scss";
 @import "scss/navigation.scss";
+@import "scss/projects.scss";
 
 html {
     scroll-behavior: smooth;
@@ -18,11 +19,12 @@ section {
         padding: 140px 0 10px;
         margin: 0 auto 80px;
         font-size: 35px;
-        width: 30%;
+        width: 50%;
         text-align: center;
         color: $navigation-text;
         box-shadow: 0 55px 68px -55px $shadow-grey;
         border-bottom: 1px solid $logo-dark-blue;
+        text-transform: uppercase;
     }
 
     p {
