@@ -22,7 +22,7 @@
                     <li><a href="#header"><p>home</p></a></li>
                     <li><a href="#about"><p>o nas</p></a></li>
                     <li><a href="#projects"><p>projekty</p></a></li>
-                    <li><a href="#collaboration"><p>współpraca</p></a></li>
+                    <!--<li><a href="#collaboration"><p>współpraca</p></a></li>-->
                     <li class="pull-right"><a href="#contact"><p><i class="fas fa-phone"></i></p></a></li>
                 </ul>
             </nav>
@@ -39,73 +39,21 @@
             badawczych.</p>
         </section>
 
-        <section id="projects">
-            <h2>projects</h2>
-            This is content
+        <section id="projects" class="content">
+            <h2>projekty</h2>
+            This is projects
         </section>
 
-        <section id="collaboration">
+<!--        <section id="collaboration">
             <h2>projects</h2>
             This is content
-        </section>
+        </section>-->
 
         <section id="contact">
-            <h2>contact</h2>
+            <h2>kontakt</h2>
             This is footer
         </section>
 
-
-        <script>
-            let mainNavLinks = document.querySelectorAll("#navigation ul li a");
-            let mainSections = document.querySelectorAll("section");
-
-            let lastId;
-            let cur = [];
-            
-            let navbar = document.getElementById("navigation__links-container");
-            let sticky = navbar.offsetTop;
-
-
-
-            window.addEventListener("scroll", event => {
-                let fromTop = window.scrollY;
-
-                mainNavLinks.forEach(link => {
-                    let section = document.querySelector(link.hash);
-
-                    if (
-                            section.offsetTop <= fromTop &&
-                            section.offsetTop + section.offsetHeight > fromTop
-                            ) {
-                        link.classList.add("selected");
-                    } else {
-                        link.classList.remove("selected");
-                    }
-                });
-                
-                
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("navigation-fixed-top");
-                } else {
-                    navbar.classList.remove("navigation-fixed-top");
-                }
-
-            });
-
-
-
-
-//            window.onscroll = function () {
-//                myFunction()
-//            };
-
-
-// Get the offset position of the navbar
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-//            function myFunction() {
-                
-//            }
-        </script>
+        <script src="js/navigation-bar.js"></script>
     </body>
 </html>
