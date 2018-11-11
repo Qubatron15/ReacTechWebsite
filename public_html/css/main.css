@@ -46,7 +46,8 @@
 
 #projects {
   position: relative;
-  z-index: 200; }
+  z-index: 200;
+  overflow: hidden; }
   #projects .projects-background {
     content: "";
     position: absolute;
@@ -56,13 +57,15 @@
     height: 100%;
     background-image: url("../img/projects-background.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(100%);
+    filter: grayscale(50%);
+    transform: scaleX(-1);
     z-index: 1; }
 
 .projects {
+  max-width: 2560px;
   display: flex;
   align-items: stretch;
   height: 100%;
@@ -70,18 +73,52 @@
   .projects__caption {
     z-index: 100;
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; }
+    color: #000000; }
     .projects__caption h3 {
-      text-transform: uppercase;
-      font-size: 35px;
-      text-align: center;
-      padding: 150px 0 0; }
-    .projects__caption p {
-      margin: 150px 75px 0;
-      font-size: 30px; }
+      margin: 280px 260px 0 90px;
+      text-align: justify;
+      font-size: 30px;
+      line-height: 2.2; }
   .projects__tiles {
-    width: 50%; }
+    z-index: 100;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .projects__tiles h3 {
+      font-size: 30px;
+      text-align: center;
+      color: #ffffff;
+      margin: 150px 0 0; }
+    .projects__tiles ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      height: calc(100% - 180px);
+      width: 40vw;
+      max-width: 900px;
+      margin: auto; }
+      .projects__tiles ul li {
+        width: 10vw;
+        max-width: 200px;
+        height: 10vw;
+        max-height: 200px;
+        margin: 5px;
+        border: 1px solid #2075a0;
+        color: white;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 2;
+        justify-content: center;
+        transition: 0.2s;
+        background-color: transparent; }
+        .projects__tiles ul li:hover {
+          transform: scale(1.025);
+          background-color: #2aa8e0;
+          box-shadow: 0 0 150px -30px #000000; }
 
 html {
   scroll-behavior: smooth; }
