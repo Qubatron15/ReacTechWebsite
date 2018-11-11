@@ -120,6 +120,17 @@
           background-color: #2aa8e0;
           box-shadow: 0 0 150px -30px #000000; }
 
+#contact h3 {
+  font-size: 25px;
+  margin: 20px 0; }
+#contact h4 {
+  font-size: 23px;
+  margin: 0; }
+#contact p {
+  margin: 0; }
+#contact > div {
+  margin: 60px 0; }
+
 html {
   scroll-behavior: smooth; }
 

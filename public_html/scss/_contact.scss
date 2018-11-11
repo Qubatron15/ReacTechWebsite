@@ -1,0 +1,20 @@
+#contact {
+    
+    h3 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    
+    h4 {
+        font-size: 23px;
+        margin: 0;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    & > div {
+        margin: 60px 0;
+    }
+}
