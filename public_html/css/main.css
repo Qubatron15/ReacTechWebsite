@@ -44,10 +44,14 @@
           #navigation__links-container ul li:hover p, #navigation__links-container ul li .selected p {
             transform: scale(1.1); }
 
+#about {
+  height: 100vh; }
+
 #projects {
   position: relative;
   z-index: 200;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100vh; }
   #projects::before {
     content: "";
     position: absolute;
@@ -120,25 +124,51 @@
           background-color: #2aa8e0;
           box-shadow: 0 0 150px -30px #000000; }
 
-#contact h3 {
-  font-size: 25px;
-  margin: 20px 0; }
-#contact h4 {
-  font-size: 23px;
-  margin: 0; }
-#contact p {
-  margin: 0; }
-#contact > div {
-  margin: 60px 0; }
+#collaboration {
+  height: 100vh; }
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2075a0;
+  color: white; }
+  .contact h3 {
+    font-size: 20px;
+    margin: 15px 0 0; }
+  .contact p {
+    font-size: 17px;
+    margin: 0;
+    line-height: 1.5; }
+  .contact__specialists {
+    padding: 0 2%;
+    width: 25%; }
+  .contact__company {
+    padding: 0 2%;
+    width: 33%; }
+  .contact__map {
+    width: 33%; }
+    .contact__map iframe {
+      width: 100%; }
+
+#footer {
+  padding: 10px 50px;
+  font-size: 13px;
+  color: #bababa;
+  background-color: #000000; }
 
 html {
   scroll-behavior: smooth; }
 
+body {
+  font-family: sans-serif; }
+
 .content {
   width: 80%;
   max-width: 1100px;
-  margin: auto;
-  font-family: sans-serif; }
+  margin: auto; }
 
 section h2 {
   padding: 140px 0 10px;
@@ -156,7 +186,8 @@ section p {
   font-size: 20px;
   margin: 30px 0; }
 
-section {
-  height: 100vh; }
+/*section:not(#contact) {
+    height: 100vh
+}*/
 
 /*# sourceMappingURL=main.css.map */

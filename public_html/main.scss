@@ -1,18 +1,24 @@
 @import "scss/palette.scss";
 @import "scss/header.scss";
 @import "scss/navigation.scss";
+@import "scss/about.scss";
 @import "scss/projects.scss";
+@import "scss/collaboration.scss";
 @import "scss/contact.scss";
+@import "scss/footer.scss";
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
 }
 
 .content {
     width: 80%;
     max-width: 1100px;
     margin: auto;
-    font-family: sans-serif;
 }
 
 section {
@@ -36,6 +42,6 @@ section {
     }
 }
 
-section {
+/*section:not(#contact) {
     height: 100vh
-}
+}*/
