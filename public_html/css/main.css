@@ -18,6 +18,7 @@
     height: 65px; }
     #navigation__links-container.navigation-fixed-top {
       top: 0;
+      left: 0;
       position: fixed;
       background-color: white;
       box-shadow: 0 30px 60px -10px #bababa;
@@ -179,11 +180,10 @@ html {
 
 body {
   font-family: sans-serif;
-  max-width: 2560px;
   min-width: 940px;
   margin: auto; }
   body .page-wrapper {
-    max-width: 1920px;
+    max-width: 2560px;
     margin: auto; }
 
 .content {
