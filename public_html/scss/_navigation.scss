@@ -11,6 +11,7 @@
             position: fixed;
             background-color: white;
             box-shadow: 0 30px 60px -10px $shadow-grey;
+            min-width: 940px;
 
             ul li {
                 &:hover, .selected {

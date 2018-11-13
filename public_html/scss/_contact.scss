@@ -5,13 +5,16 @@
     .contact {
         width: 100%;
         height: 453px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
         background-color: $logo-dark-blue;
         color: white;
 
+        & > div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
         h3 {
             font-size: 20px;
             margin: 15px 0 0;
