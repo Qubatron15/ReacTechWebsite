@@ -1,7 +1,8 @@
 let mainNavLinks = document.querySelectorAll("#navigation ul li a"),
         websiteSections = document.querySelectorAll("section"),
-        navbarContainer = document.getElementById("navigation__links-container"),
-        navbarOffset = navbarContainer.offsetTop;
+        navbar = document.querySelector("#navigation__links-container"),
+        navbarContainer = document.querySelector("#navigation"),
+        navbarOffset;
 
 
 function setActiveNavLink() {
@@ -19,15 +20,25 @@ function setActiveNavLink() {
 
 function stickNavbarToTop() {
     if (window.pageYOffset >= navbarOffset) {
-        navbarContainer.classList.add("navigation-fixed-top");
+        navbar.classList.add("navigation-fixed-top");
     } else {
-        navbarContainer.classList.remove("navigation-fixed-top");
+        navbar.classList.remove("navigation-fixed-top");
     }
+}
+
+function refreshNavbarOffset() {
+    navbarOffset = navbarContainer.offsetTop;
 }
 
 window.addEventListener("scroll", () => {
     setActiveNavLink();
     stickNavbarToTop();
 });
+
+window.addEventListener("resize", () => {
+    refreshNavbarOffset();
+});
+
+refreshNavbarOffset();
 
 setActiveNavLink();
