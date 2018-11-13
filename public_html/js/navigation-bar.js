@@ -10,7 +10,7 @@ function setActiveNavLink() {
 
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+        if (section.offsetTop <= fromTop + 5 && section.offsetTop + section.offsetHeight > fromTop + 5) {
             link.classList.add("selected");
         } else {
             link.classList.remove("selected");
