@@ -164,6 +164,7 @@
       #contact .contact__specialists a {
         text-decoration: none; }
       #contact .contact__specialists__collaboration {
+        display: inline-block;
         margin-top: 30px;
         line-height: 40px;
         width: 200px;
