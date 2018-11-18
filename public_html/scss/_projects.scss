@@ -4,6 +4,25 @@
     z-index: 200;
     overflow: hidden;
 
+    #projects-background {
+        opacity: 0;
+        transition: 0.5s;
+        
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/projects-background.jpg");
+        background-attachment: fixed;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(50%);
+        transform: scaleX(-1);
+        z-index: 2;
+    }
+    
     &::before {
         content: "";
         position: absolute;
@@ -32,6 +51,7 @@
         z-index: 100;
         width: 50%;
         color: $blackest-black;
+        transition: 0.5s;
 
         h3 {
             margin: 280px 260px 0 90px;
@@ -95,7 +115,7 @@
 
                 &:hover {
                     transform: scale(1.025);
-                    /*background-color: #2aa8e0;*/
+                    background-color: #2aa8e0;
                     box-shadow: 0 0 150px -30px $blackest-black;
                 }
             }
