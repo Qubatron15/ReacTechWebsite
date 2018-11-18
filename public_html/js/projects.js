@@ -1,6 +1,14 @@
-function logSth() {
-    console.log('hahahaha');
-}
+const backgroundImagesConfig = [
+    'dust',
+    'dust',
+    'chemicals',
+    'indicator',
+    'indicator',
+    'indicator',
+    'microscope',
+    'fire',
+    'tubing'
+]
 
 let projectsBackgroundElement = document.querySelector("#projects-background"),
     projectsTitleElement = document.querySelector("#projects-hiding-title");
