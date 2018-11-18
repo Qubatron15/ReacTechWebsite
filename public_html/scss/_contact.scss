@@ -29,6 +29,28 @@
         &__specialists {
             padding: 0 2%;
             width: 25%;
+            
+            a {
+                text-decoration: none;
+            }
+            
+            &__collaboration {
+                margin-top: 30px;
+                line-height: 40px;
+                width: 200px;
+                text-align: center;
+                border: 2px solid $whitest-white;
+                color: $whitest-white;
+                white-space: nowrap;
+                transition: 0.2s;
+                cursor: pointer;
+                font-weight: bold;
+                
+                &:hover {
+                    background-color: $whitest-white;
+                    color: $logo-dark-blue;
+                }
+            }
         }
 
         &__company {

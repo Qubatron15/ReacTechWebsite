@@ -132,7 +132,7 @@
             height: 50px; } }
         .projects__tiles ul li:hover {
           transform: scale(1.025);
-          background-color: #2aa8e0;
+          /*background-color: #2aa8e0;*/
           box-shadow: 0 0 150px -30px #000000; }
 
 #collaboration {
@@ -161,6 +161,22 @@
     #contact .contact__specialists {
       padding: 0 2%;
       width: 25%; }
+      #contact .contact__specialists a {
+        text-decoration: none; }
+      #contact .contact__specialists__collaboration {
+        margin-top: 30px;
+        line-height: 40px;
+        width: 200px;
+        text-align: center;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        white-space: nowrap;
+        transition: 0.2s;
+        cursor: pointer;
+        font-weight: bold; }
+        #contact .contact__specialists__collaboration:hover {
+          background-color: #ffffff;
+          color: #2075a0; }
     #contact .contact__company {
       padding: 0 2%;
       width: 33%; }
