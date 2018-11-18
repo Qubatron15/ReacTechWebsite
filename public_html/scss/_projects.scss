@@ -5,7 +5,7 @@
     overflow: hidden;
 
     #projects-background {
-        opacity: 0;
+        /*opacity: 0;*/
         transition: 0.5s;
         
         content: "";
@@ -23,7 +23,7 @@
         z-index: 2;
     }
     
-    &::before {
+/*    &::before {
         content: "";
         position: absolute;
         top: 0; left: 0;
@@ -37,7 +37,7 @@
         filter: grayscale(50%);
         transform: scaleX(-1);
         z-index: 1;
-    }
+    }*/
 }
 
 .projects {

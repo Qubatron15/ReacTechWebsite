@@ -6,15 +6,14 @@ let projectsBackgroundElement = document.querySelector("#projects-background"),
     projectsTitleElement = document.querySelector("#projects-hiding-title");
 
 function resetProjectsBackground() {
-    
-//    projectsBackgroundElement.style.backgroundImage = "url('img/projects-background.jpg')"; 
-    projectsBackgroundElement.style.opacity = "0";
+    projectsBackgroundElement.style.backgroundImage = "url('img/projects-background.jpg')"; 
+//    projectsBackgroundElement.style.opacity = "0";
     projectsTitleElement.style.opacity = "1";
 }
 
 function setProjectsBackground() {
     projectsBackgroundElement.style.backgroundImage = "url('img/mikroskop.jpg')"; 
-    projectsBackgroundElement.style.opacity = "1";
+//    projectsBackgroundElement.style.opacity = "1";
     projectsTitleElement.style.opacity = "0";
 }
 
