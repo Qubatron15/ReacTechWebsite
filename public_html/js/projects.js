@@ -8,7 +8,8 @@ const backgroundImagesConfig = [
     'microscope',
     'fire',
     'tubing'
-];
+],
+        transitionAnimationDuration = 1000;
 
 let allTilesArray = document.querySelectorAll('#projects__tiles__list li'),
         tilesContainer = document.querySelector('#projects__tiles__list'),
@@ -33,17 +34,17 @@ function isHovered(element) {
 allTilesArray.forEach((tile, index) => {
     tile.addEventListener("mouseenter", () => {
         setTimeout(() => {
-            if(isHovered(tile)) {
+            if (isHovered(tile)) {
                 setProjectsBackground(backgroundImagesConfig[index]);
             }
-        }, 500);
+        }, transitionAnimationDuration);
     });
 });
 
 tilesContainer.addEventListener("mouseleave", () => {
     setTimeout(() => {
-        if(!isHovered(tilesContainer)) {
+        if (!isHovered(tilesContainer)) {
             resetProjectsBackground();
         }
-    }, 500);
+    }, transitionAnimationDuration);
 });

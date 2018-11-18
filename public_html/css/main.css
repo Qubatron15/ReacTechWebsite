@@ -55,7 +55,7 @@
   z-index: 200;
   overflow: hidden; }
   #projects #projects-background {
-    transition: 0.5s;
+    transition: 1s;
     content: "";
     position: absolute;
     top: 0;
