@@ -17,6 +17,15 @@ let allTilesArray = document.querySelectorAll('#projects__tiles__list li'),
         projectsTitleElement = document.querySelector("#projects-hiding-title");
 
 
+function preloadBackgroundImages() {
+    let preloadedImagesArray = new Array(9).fill(new Image());
+    backgroundImagesConfig.forEach((imageName, index) => {
+        preloadedImagesArray[index].src = `img/${imageName}.jpg`;
+    });
+//    var my_image = new Image();
+//    my_image.src = 'img/fire.jpg';
+}
+
 function setProjectsBackground(backgroundImage) {
     projectsBackgroundElement.style.backgroundImage = `url('img/${backgroundImage}.jpg')`;
     projectsTitleElement.style.opacity = "0";
@@ -48,3 +57,5 @@ tilesContainer.addEventListener("mouseleave", () => {
         }
     }, transitionAnimationDuration);
 });
+
+window.onload = preloadBackgroundImages;
