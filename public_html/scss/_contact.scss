@@ -7,6 +7,7 @@
         height: 453px;
         background-color: $logo-dark-blue;
         color: white;
+        position: relative;
 
         & > div {
             display: flex;
@@ -29,16 +30,23 @@
         &__specialists {
             padding: 0 2%;
             width: 25%;
+        }
+
+        &__company {
+            padding: 0 2%;
+            width: 33%;
+        }
+        
+        &__buttons {
+            position: absolute;
+            bottom: 20px;
+            margin-left: 2%;
             
-            a {
-                text-decoration: none;
-            }
-            
-            &__collaboration {
+            .button {
                 display: inline-block;
-                margin-top: 30px;
                 line-height: 40px;
                 width: 200px;
+                margin-right: 10px;
                 text-align: center;
                 border: 2px solid $whitest-white;
                 color: $whitest-white;
@@ -46,17 +54,16 @@
                 transition: 0.2s;
                 cursor: pointer;
                 font-weight: bold;
-                
+
                 &:hover {
                     background-color: $whitest-white;
                     color: $logo-dark-blue;
                 }
             }
         }
-
-        &__company {
-            padding: 0 2%;
-            width: 33%;
+        
+        a {
+            text-decoration: none;
         }
 
         &__map {

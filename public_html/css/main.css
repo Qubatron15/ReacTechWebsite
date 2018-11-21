@@ -145,7 +145,8 @@
     width: 100%;
     height: 453px;
     background-color: #2075a0;
-    color: white; }
+    color: white;
+    position: relative; }
     #contact .contact > div {
       display: flex;
       flex-wrap: wrap;
@@ -161,13 +162,18 @@
     #contact .contact__specialists {
       padding: 0 2%;
       width: 25%; }
-      #contact .contact__specialists a {
-        text-decoration: none; }
-      #contact .contact__specialists__collaboration {
+    #contact .contact__company {
+      padding: 0 2%;
+      width: 33%; }
+    #contact .contact__buttons {
+      position: absolute;
+      bottom: 20px;
+      margin-left: 2%; }
+      #contact .contact__buttons .button {
         display: inline-block;
-        margin-top: 30px;
         line-height: 40px;
         width: 200px;
+        margin-right: 10px;
         text-align: center;
         border: 2px solid #ffffff;
         color: #ffffff;
@@ -175,12 +181,11 @@
         transition: 0.2s;
         cursor: pointer;
         font-weight: bold; }
-        #contact .contact__specialists__collaboration:hover {
+        #contact .contact__buttons .button:hover {
           background-color: #ffffff;
           color: #2075a0; }
-    #contact .contact__company {
-      padding: 0 2%;
-      width: 33%; }
+    #contact .contact a {
+      text-decoration: none; }
     #contact .contact__map {
       width: 33%; }
       #contact .contact__map iframe {
