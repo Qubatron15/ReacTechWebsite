@@ -19,7 +19,6 @@ let allTilesArray = document.querySelectorAll('#projects__tiles__list li'),
 
 function preloadBackgroundImages() {
     backgroundImagesConfig.forEach((imageName, index) => {
-        console.log('image loading:', imageName);
         preloadedImagesArray[index] = new Image();
         preloadedImagesArray[index].src = `img/${imageName}.jpg`;
     });
