@@ -14,20 +14,19 @@ const backgroundImagesConfig = [
 let allTilesArray = document.querySelectorAll('#projects__tiles__list li'),
         tilesContainer = document.querySelector('#projects__tiles__list'),
         projectsBackgroundElement = document.querySelector("#projects-background"),
-        projectsTitleElement = document.querySelector("#projects-hiding-title");
-
+        projectsTitleElement = document.querySelector("#projects-hiding-title"),
+        preloadedImagesArray = new Array();
 
 function preloadBackgroundImages() {
-    let preloadedImagesArray = new Array(9).fill(new Image());
     backgroundImagesConfig.forEach((imageName, index) => {
+        console.log('image loading:', imageName);
+        preloadedImagesArray[index] = new Image();
         preloadedImagesArray[index].src = `img/${imageName}.jpg`;
     });
-//    var my_image = new Image();
-//    my_image.src = 'img/fire.jpg';
 }
 
-function setProjectsBackground(backgroundImage) {
-    projectsBackgroundElement.style.backgroundImage = `url('img/${backgroundImage}.jpg')`;
+function setProjectsBackground(index) {
+    projectsBackgroundElement.style.backgroundImage = `url('${preloadedImagesArray[index].src}')`;
     projectsTitleElement.style.opacity = "0";
 }
 
@@ -44,7 +43,7 @@ allTilesArray.forEach((tile, index) => {
     tile.addEventListener("mouseenter", () => {
         setTimeout(() => {
             if (isHovered(tile)) {
-                setProjectsBackground(backgroundImagesConfig[index]);
+                setProjectsBackground(index);
             }
         }, transitionAnimationDuration);
     });

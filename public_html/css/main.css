@@ -67,7 +67,7 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(75%);
+    filter: grayscale(50%);
     z-index: 2; }
 
 .projects {
@@ -83,7 +83,6 @@
     transition: 0.5s; }
     .projects__caption h3 {
       margin: 280px 260px 0 90px;
-      text-align: justify;
       font-size: 30px;
       line-height: 2.2; }
       @media all and (max-width: 1350px) {
