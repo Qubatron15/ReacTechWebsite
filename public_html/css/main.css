@@ -1,3 +1,29 @@
+#cookie-information {
+  width: 500px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+  position: fixed;
+  bottom: -1000px;
+  left: 20px;
+  padding: 15px;
+  z-index: 250; }
+  #cookie-information__agree-button {
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    line-height: 2;
+    padding: 0 20px;
+    margin: 10px auto 0;
+    display: block;
+    cursor: pointer;
+    transition: 0.2s; }
+    #cookie-information__agree-button:hover {
+      background: #ffffff;
+      color: #000000; }
+
 #header {
   width: 100%;
   box-shadow: 0 100px 143px -100px #bababa; }

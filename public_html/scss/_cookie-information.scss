@@ -1,0 +1,30 @@
+#cookie-information {
+    width: 500px;
+    background: $less-opacity-black;
+    color: $whitest-white;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+    position: fixed;
+    bottom: -1000px;
+    left: 20px;
+    padding: 15px;
+    z-index: 250;
+    
+    &__agree-button {
+        border: 2px solid $whitest-white;
+        background: transparent;
+        color: $whitest-white;
+        line-height: 2;
+        padding: 0 20px;
+        margin: 10px auto 0;
+        display: block;     
+        cursor: pointer;
+        transition: 0.2s;
+        
+        &:hover {
+            background: $whitest-white;
+            color: $blackest-black;
+        }
+    }
+}
