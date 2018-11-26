@@ -75,12 +75,12 @@
 #about {
   min-height: 100vh; }
 
-#projects {
+#products {
   min-height: 100vh;
   position: relative;
   z-index: 200;
   overflow: hidden; }
-  #projects #projects-background {
+  #products #products-background {
     transition: 1s;
     content: "";
     position: absolute;
@@ -88,7 +88,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/projects-background.jpg");
+    background-image: url("../img/products-background.jpg");
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -96,34 +96,34 @@
     filter: grayscale(50%);
     z-index: 2; }
 
-.projects {
+.products {
   max-width: 2560px;
   display: flex;
   align-items: stretch;
   min-height: 100vh;
   font-family: sans-serif; }
-  .projects__caption {
+  .products__caption {
     z-index: 100;
     width: 50%;
     color: #000000;
     transition: 0.5s; }
-    .projects__caption h3 {
+    .products__caption h3 {
       margin: 280px 260px 0 90px;
       font-size: 30px;
       line-height: 2.2; }
       @media all and (max-width: 1350px) {
-        .projects__caption h3 {
+        .products__caption h3 {
           margin: 280px 50px 0; } }
-  .projects__tiles {
+  .products__tiles {
     z-index: 100;
     width: 50%;
     background-color: rgba(0, 0, 0, 0.7); }
-    .projects__tiles h3 {
+    .products__tiles h3 {
       font-size: 30px;
       text-align: center;
       color: #ffffff;
       margin: 120px 0 0; }
-    .projects__tiles ul {
+    .products__tiles ul {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -133,7 +133,7 @@
       width: 40vw;
       max-width: 900px;
       margin: auto; }
-      .projects__tiles ul li {
+      .products__tiles ul li {
         width: 10vw;
         max-width: 200px;
         height: 10vw;
@@ -151,12 +151,12 @@
         transition: 0.2s;
         background-color: transparent; }
         @media all and (max-width: 1850px) {
-          .projects__tiles ul li {
+          .products__tiles ul li {
             max-width: none;
             width: 100%;
             min-width: 375px;
             height: 50px; } }
-        .projects__tiles ul li:hover {
+        .products__tiles ul li:hover {
           transform: scale(1.025);
           box-shadow: 0 0 150px -30px #000000; }
 

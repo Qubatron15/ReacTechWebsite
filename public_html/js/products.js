@@ -11,10 +11,10 @@ const backgroundImagesConfig = [
 ],
         transitionAnimationDuration = 1000;
 
-let allTilesArray = document.querySelectorAll('#projects__tiles__list li'),
-        tilesContainer = document.querySelector('#projects__tiles__list'),
-        projectsBackgroundElement = document.querySelector("#projects-background"),
-        projectsTitleElement = document.querySelector("#projects-hiding-title"),
+let allTilesArray = document.querySelectorAll('#products__tiles__list li'),
+        tilesContainer = document.querySelector('#products__tiles__list'),
+        productsBackgroundElement = document.querySelector("#products-background"),
+        productsTitleElement = document.querySelector("#products-hiding-title"),
         preloadedImagesArray = new Array();
 
 function preloadBackgroundImages() {
@@ -25,13 +25,13 @@ function preloadBackgroundImages() {
 }
 
 function setProjectsBackground(index) {
-    projectsBackgroundElement.style.backgroundImage = `url('${preloadedImagesArray[index].src}')`;
-    projectsTitleElement.style.opacity = "0";
+    productsBackgroundElement.style.backgroundImage = `url('${preloadedImagesArray[index].src}')`;
+    productsTitleElement.style.opacity = "0";
 }
 
 function resetProjectsBackground() {
-    projectsBackgroundElement.style.backgroundImage = "url('img/projects-background.jpg')";
-    projectsTitleElement.style.opacity = "1";
+    productsBackgroundElement.style.backgroundImage = "url('img/products-background.jpg')";
+    productsTitleElement.style.opacity = "1";
 }
 
 function isHovered(element) {
