@@ -160,9 +160,6 @@
           transform: scale(1.025);
           box-shadow: 0 0 150px -30px #000000; }
 
-#collaboration {
-  height: 100vh; }
-
 #contact {
   min-height: calc(100vh - (100vh - 453px));
   padding-top: calc(100vh - 453px); }
