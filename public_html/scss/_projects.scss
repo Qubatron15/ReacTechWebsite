@@ -64,7 +64,8 @@
             align-items: center;
             align-content: center;
             flex-wrap: wrap;
-            height: calc(100% - 180px);
+            min-height: calc(100% - 180px);
+            padding: 20px 0;
             width: 40vw;
             max-width: 900px;
             margin: auto;
