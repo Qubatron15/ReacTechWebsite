@@ -1,0 +1,45 @@
+#navigation
+    height: 65px
+
+    &__links-container
+        z-index: 500
+        width: 100%
+        height: 65px
+
+        &.navigation-fixed-top
+            top: 0
+            left: 0
+            position: fixed
+            background-color: white
+            box-shadow: 0 30px 60px -10px $shadow-grey
+            min-width: 940px
+
+            ul li
+                &:hover, .selected
+                    background: none
+                    box-shadow: none
+                
+        ul
+            list-style-type: none
+
+            li
+                float: left
+
+                a
+                    text-align: center
+                    padding: 20px 30px
+                    display: block
+                    text-decoration: none
+                    font-size: 25px
+                    color: $navigation-text
+                
+                &.pull-right
+                    float: right
+                
+                &:hover, .selected
+                    color: $logo-bright-blue
+                    background: white
+                    box-shadow: 0 30px 60px -10px $shadow-grey
+
+                    p
+                        transform: scale(1.1)
