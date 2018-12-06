@@ -39,6 +39,7 @@
 }
 #header .header__logo img {
   height: 20vmax;
+  min-height: 250px;
 }
 
 #navigation {
@@ -107,7 +108,7 @@
   height: 100%;
   background-image: url("../img/products-background.jpg");
   background-attachment: fixed;
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(50%);
