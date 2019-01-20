@@ -1,114 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Reactech - high-tech solutions</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    </head>
-    <body>
-        <div id="header">
-            <div class="header__logo">
-                <img src="img/reactech-loco-color.png"
-                     alt="reactech logo">
-            </div>
-        </div>
 
-        <div id="navigation">
-            <nav id="navigation__links-container">
-                <ul class="content">
-                    <li><a href="#header"><p><i class="fa fa-home"></i></p></a></li>
-                    <li><a href="#about"><p>o nas</p></a></li>
-                    <li><a href="#products"><p>produkty</p></a></li>
-                    <li class="pull-right"><a href="#contact"><p>kontakt</p></a></li>
+<head>
+    <title>Reactech - high-tech solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="header">
+        <div class="header__logo">
+            <img src="img/reactech-loco-color.png" alt="reactech logo">
+        </div>
+    </div>
+
+    <div id="navigation">
+        <nav id="navigation__links-container">
+            <ul class="content">
+                <li><a href="#header">
+                        <p><i class="fa fa-home"></i></p>
+                    </a></li>
+                <li><a href="#about">
+                        <p>o nas</p>
+                    </a></li>
+                <li><a href="#products">
+                        <p>produkty</p>
+                    </a></li>
+                <li class="pull-right"><a href="#contact">
+                        <p>kontakt</p>
+                    </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="about" class="content">
+        <h2>o nas</h2>
+        <p>REACTECH został założony przez dwóch inżynierów nie bojących się wyzwań jakie niesie współczesny
+            przemysł oraz świat nauki. Stawiamy czoła rosnącym wymaganiom rynku, dzięki wiedzy i
+            doświadczeniu w dziedzinie inżynierii materiałowej, wysokich ciśnień, chemii oraz obróbki i doboru
+            materiałów specjalnych.</p>
+        <p>Nasze produkty znajdują zastosowania w branżach takich jak przemysł chemiczny, farmaceutyka,
+            biotechnologia, przemysł spożywczy, petrochemia oraz we wszelkiego typu laboratoriach
+            badawczych.</p>
+    </section>
+
+    <section id="products">
+        <!-- <div id="products-background"></div> -->
+        <div class="products page-wrapper">
+            <div class="products__caption" id="products-hiding-title">
+                <h3>Nasza firma pomaga klientom którzy pracują z agresywnymi substancjami, wysokimi ciśnieniami oraz
+                    niskimi i wysokimi temperaturami.</h3>
+            </div>
+            <div class="products__tiles">
+                <h3>Dostarczamy między innymi:</h3>
+                <div class="products__tiles__backdrop"></div>
+                <ul class="products__tiles__list">
+                    <li>
+                        <div class="products__tiles__list__title">Reaktory do mechanicznej syntezy</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/dust.jpg')"></div>
+                    </li>
+                    <li>
+                        <div class="products__tiles__list__title">Naczynia do mielenia</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/dust.jpg')"></div>
+                    </li>
+                    <li>
+                        <div class="products__tiles__list__title">Reaktory chemiczne</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/chemicals.jpg')"></div>
+                    </li>
+                    <li>
+                        <div class="products__tiles__list__title">Autoklawy wysokociśnieniowe</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/indicator.jpg')"></div>
+                    </li>
+                    <li>
+                        <div class="products__tiles__list__title">Komory wysokociśnieniowe</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/indicator.jpg')"></div>
+                    </li>
+                    <li>
+                        <div class="products__tiles__list__title">Reaktory wysokociśnieniowe</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/indicator.jpg')"></div>
+                    </li>
+                    <li>
+                        <div class="products__tiles__list__title">Naczynia do spiekania w niskich temperaturach pod
+                            wysokim ciśnieniem</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/microscope.jpg')"></div>
+                    </li>
+                    <li>
+                        <div class="products__tiles__list__title">Naczynia wysokotemperaturowe oraz kriogeniczne</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/fire.jpg')"></div>
+                    </li>
+                    <li>
+                        <div class="products__tiles__list__title">Naczynia do ekstrakcji nadkrytycznej</div>
+                        <div class="products__tiles__list__background" style="background-image: url('img/tubing.jpg')"></div>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
+    </section>
 
-        <section id="about" class="content">
-            <h2>o nas</h2>
-            <p>REACTECH został założony przez dwóch inżynierów nie bojących się wyzwań jakie niesie współczesny
-                przemysł oraz świat nauki. Stawiamy czoła rosnącym wymaganiom rynku, dzięki wiedzy i
-                doświadczeniu w dziedzinie inżynierii materiałowej, wysokich ciśnień, chemii oraz obróbki i doboru
-                materiałów specjalnych.</p>
-            <p>Nasze produkty znajdują zastosowania w branżach takich jak przemysł chemiczny, farmaceutyka,
-                biotechnologia, przemysł spożywczy, petrochemia oraz we wszelkiego typu laboratoriach
-                badawczych.</p>
-        </section>
+    <section id="contact">
+        <div class="contact">
+            <div class="page-wrapper">
+                <div class="contact__specialists">
+                    <h3>Zapytania prosimy przesyłać na:</h3>
+                    <p>Email: Office@reactech.pl</p>
 
-        <section id="products">
-            <div id="products-background"></div>
-            <div class="products page-wrapper">
-                <div class="products__caption" id="products-hiding-title">
-                    <h3>Nasza firma pomaga klientom którzy pracują z agresywnymi substancjami, wysokimi ciśnieniami oraz
-                        niskimi i wysokimi temperaturami.</h3>
+                    <h3>Nasi specjaliści:</h3>
+                    <p>Inż. Mateusz Firynowicz</p>
+                    <p>Tel. +48 724 845 950</p>
+                    <br>
+                    <p>Mgr inż. Wojciech Żerkowski</p>
+                    <p>Tel. +48 607 494 611</p>
                 </div>
-                <div class="products__tiles">
-                    <h3>Dostarczamy między innymi:</h3>
-                    <ul id="products__tiles__list">
-                        <li>Reaktory do mechanicznej syntezy</li>
-                        <li>Naczynia do mielenia</li>
-                        <li>Reaktory chemiczne</li>
-                        <li>Autoklawy wysokociśnieniowe</li>
-                        <li>Komory wysokociśnieniowe</li>
-                        <li>Reaktory wysokociśnieniowe</li>
-                        <li>Naczynia do spiekania w niskich temperaturach pod wysokim ciśnieniem</li>
-                        <li>Naczynia wysokotemperaturowe oraz kriogeniczne</li>
-                        <li>Naczynia do ekstrakcji nadkrytycznej</li>
-                    </ul>
+
+                <div class="contact__company">
+                    <h3>Dane firmy:</h3>
+                    <p>Pełna nazwa firmy: REACTECH FIRYNOWICZ ŻERKOWSKI Spółka Jawna</p>
+                    <p>Adres: ul. Rubież 46, 61-612 Poznań, POLSKA</p>
+                    <p>NIP: 972-129-50-36</p>
+                    <p>KRS: 0000752716</p>
+                    <p>Email: Office@reactech.pl</p>
+                </div>
+
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.349323931295!2d16.951784715997228!3d52.4547007488186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045ccf52ecac57%3A0xc52a6ac567e7d3b7!2zUnViaWXFvCA0NiwgNjEtNjEyIFBvem5hxYQ!5e0!3m2!1spl!2spl!4v1541952432378"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-        </section>
 
-        <section id="contact">
-            <div class="contact">
-                <div class="page-wrapper">
-                    <div class="contact__specialists">
-                        <h3>Zapytania prosimy przesyłać na:</h3>
-                        <p>Email: Office@reactech.pl</p>
-
-                        <h3>Nasi specjaliści:</h3>
-                        <p>Inż. Mateusz Firynowicz</p>
-                        <p>Tel. +48 724 845 950</p>
-                        <br>
-                        <p>Mgr inż. Wojciech Żerkowski</p>
-                        <p>Tel. +48 607 494 611</p>
-                    </div>
-
-                    <div class="contact__company">
-                        <h3>Dane firmy:</h3>
-                        <p>Pełna nazwa firmy: REACTECH FIRYNOWICZ ŻERKOWSKI Spółka Jawna</p>
-                        <p>Adres: ul. Rubież 46, 61-612 Poznań, POLSKA</p>
-                        <p>NIP: 972-129-50-36</p>
-                        <p>KRS: 0000752716</p>
-                        <p>Email: Office@reactech.pl</p>
-                    </div>
-
-                    <div class="contact__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.349323931295!2d16.951784715997228!3d52.4547007488186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045ccf52ecac57%3A0xc52a6ac567e7d3b7!2zUnViaWXFvCA0NiwgNjEtNjEyIFBvem5hxYQ!5e0!3m2!1spl!2spl!4v1541952432378" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="contact__buttons">
-                    <a href="resources/owu.pdf" class="button">OWU</a>
-                    <a href="resources/rodo.pdf" class="button">RODO</a>
-                </div>
+            <div class="contact__buttons">
+                <a href="resources/owu.pdf" class="button">OWU</a>
+                <a href="resources/rodo.pdf" class="button">RODO</a>
             </div>
-        </section>
-
-        <section id="footer">
-            <h3>Created by Jakub Paszkowski</h3>
-        </section>
-        
-        <div id="cookie-information">
-            Ta strona korzysta z ciasteczek aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich użycie.
-            <button id="cookie-information__agree-button">Zgoda</button>
         </div>
-        
-        <script src="js/cookie-information.js"></script>
-        <script src="js/navigation-bar.js"></script>
-        <script src="js/products.js"></script>
-    </body>
+    </section>
+
+    <section id="footer">
+        <h3>Website created by Jakub Paszkowski, tested by Rafał Paszkowski</h3>
+    </section>
+
+    <div id="cookie-information">
+        Ta strona korzysta z ciasteczek aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony
+        oznacza, że zgadzasz się na ich użycie.
+        <button id="cookie-information__agree-button">Zgoda</button>
+    </div>
+
+    <script src="js/cookie-information.js"></script>
+    <script src="js/navigation-bar.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
 </html>

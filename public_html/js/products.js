@@ -11,8 +11,8 @@ const backgroundImagesConfig = [
 ],
         transitionAnimationDuration = 1000;
 
-let allTilesArray = document.querySelectorAll('#products__tiles__list li'),
-        tilesContainer = document.querySelector('#products__tiles__list'),
+let allTilesArray = document.querySelectorAll('.products__tiles__list li div'),
+        tilesContainer = document.querySelector('.products__tiles__list'),
         productsBackgroundElement = document.querySelector("#products-background"),
         productsTitleElement = document.querySelector("#products-hiding-title"),
         preloadedImagesArray = new Array();
@@ -38,22 +38,22 @@ function isHovered(element) {
     return element.parentElement.querySelector(':hover') === element;
 }
 
-allTilesArray.forEach((tile, index) => {
-    tile.addEventListener("mouseenter", () => {
-        setTimeout(() => {
-            if (isHovered(tile)) {
-                setProjectsBackground(index);
-            }
-        }, transitionAnimationDuration);
-    });
-});
+// allTilesArray.forEach((tile, index) => {
+//     tile.addEventListener("mouseenter", () => {
+//         setTimeout(() => {
+//             if (isHovered(tile)) {
+//                 setProjectsBackground(index);
+//             }
+//         }, transitionAnimationDuration);
+//     });
+// });
 
-tilesContainer.addEventListener("mouseleave", () => {
-    setTimeout(() => {
-        if (!isHovered(tilesContainer)) {
-            resetProjectsBackground();
-        }
-    }, transitionAnimationDuration);
-});
+// tilesContainer.addEventListener("mouseleave", () => {
+//     setTimeout(() => {
+//         if (!isHovered(tilesContainer)) {
+//             resetProjectsBackground();
+//         }
+//     }, transitionAnimationDuration);
+// });
 
 window.onload = preloadBackgroundImages;
