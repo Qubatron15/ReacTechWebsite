@@ -1,15 +1,15 @@
-const backgroundImagesConfig = [
-    'dust',
-    'dust',
-    'chemicals',
-    'indicator',
-    'indicator',
-    'indicator',
-    'microscope',
-    'fire',
-    'tubing'
-],
-        transitionAnimationDuration = 1000;
+// const backgroundImagesConfig = [
+//     'dust',
+//     'dust',
+//     'chemicals',
+//     'indicator',
+//     'indicator',
+//     'indicator',
+//     'microscope',
+//     'fire',
+//     'tubing'
+// ],
+//         transitionAnimationDuration = 1000;
 
 // let allTilesArray = document.querySelectorAll('.products__tiles__list li div'),
 //         tilesContainer = document.querySelector('.products__tiles__list'),

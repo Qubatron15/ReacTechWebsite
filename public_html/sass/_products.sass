@@ -64,14 +64,16 @@
             top: 0
             left: 0
             z-index: -2
-            opacity: 1
             background-image: url("../img/products-background.jpg")
             background-attachment: fixed
             background-position: left
             background-repeat: no-repeat
             background-size: cover
             filter: grayscale(50%)
-            transition: 1s ease
+            opacity: 1
+            transform: scale(1.015)
+            // transition: 1s ease
+            transition: transform 1.5s ease, opacity 1s ease
 
             .products__caption
                 z-index: 100
@@ -113,6 +115,7 @@
 
             &:hover+.products__tiles__default-content
                     opacity: 0
+                    transform: scale(1)
 
             &__title
                 width: 11vw
@@ -151,6 +154,7 @@
 
                     &+.products__tiles__list__background
                         opacity: 1
+                        transform: scale(1)
 
             &__background
                 position: absolute
@@ -165,4 +169,5 @@
                 background-repeat: no-repeat
                 background-size: cover
                 filter: grayscale(50%)
-                transition: 1s ease
+                transform: scale(1.015)
+                transition: transform 1.5s ease, opacity 1s ease
