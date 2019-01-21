@@ -4,22 +4,6 @@
     z-index: 200
     overflow: hidden
 
-    // #products-background
-    //     transition: 1s
-    //     content: ""
-    //     position: absolute
-    //     top: 0
-    //     left: 0
-    //     width: 100%
-    //     height: 100%
-    //     background-image: url("../img/products-background.jpg")
-    //     background-attachment: fixed
-    //     background-position: left
-    //     background-repeat: no-repeat
-    //     background-size: cover
-    //     filter: grayscale(50%)
-    //     z-index: 2
-
 .products
     max-width: 2560px
     display: flex
@@ -30,65 +14,54 @@
 
     &__caption
         z-index: 100
-        width: 50%
+        width: 30%
         color: $blackest-black
         transition: 0.5s
+        // margin: 280px 260px 0 90px
+        font-size: 30px
+        line-height: 2.2
+        padding-left: 2vw
+        
+        @media all and (max-width: 1350px)
+            // margin: 280px 50px 0
+            width: 48%
 
-        h3
-            margin: 280px 260px 0 90px
-            font-size: 30px
-            line-height: 2.2
-            
-            @media all and (max-width: 1350px)
-                margin: 280px 50px 0
+        &--small
+            font-size: 25px
+
+        &--white
+            color: $whitest-white
             
     &__tiles
-        // z-index: 100
         width: 50%
-        // background-color: $opacity-black
         display: flex
         flex-direction: column
-        justify-content: space-around
+        justify-content: center
         align-items: center
 
-        h3
+        &__title
             font-size: 30px
             text-align: center
             color: $whitest-white
-            margin: 120px 0 0
+            // margin: 120px 0 0
+            margin: 90px 0 25px 0
         
-        &__default-content
-            position: absolute
-            width: 100%
-            height: 100%
-            top: 0
-            left: 0
-            z-index: -2
-            background-image: url("../img/products-background.jpg")
-            background-attachment: fixed
-            background-position: left
-            background-repeat: no-repeat
-            background-size: cover
-            filter: grayscale(50%)
-            opacity: 1
-            transform: scale(1.015)
-            // transition: 1s ease
-            transition: transform 1.5s ease, opacity 1s ease
-
-            .products__caption
-                z-index: 100
-                width: 50%
-                transition: 0.5s
-
-                h3
-                    color: $blackest-black
-                    margin: 280px 260px 0 90px
-                    font-size: 30px
-                    line-height: 2.2
-                    text-align: left
-                    
-                    @media all and (max-width: 1350px)
-                        margin: 280px 50px 0
+        // &__default-content
+        //     position: absolute
+        //     width: 100%
+        //     height: 100%
+        //     top: 0
+        //     left: 0
+        //     z-index: -2
+        //     background-image: url("../img/products-background.jpg")
+        //     background-attachment: fixed
+        //     background-position: left
+        //     background-repeat: no-repeat
+        //     background-size: cover
+        //     filter: grayscale(50%)
+        //     opacity: 1
+        //     transform: scale(1.015)
+        //     transition: transform 1.5s ease, opacity 1s ease
 
         &__backdrop
             position: absolute
@@ -100,28 +73,33 @@
             background-color: $opacity-black
 
         &__list
+            width: 660px
+            height: 660px
+            margin-bottom: 90px
             display: flex
             justify-content: center
             align-items: center
             align-content: center
             flex-wrap: wrap
-            // min-height: calc(100% - 180px)
-            // padding: 20px 0
-            // width: 40vw
-            // max-width: 900px
-            // margin: auto
-            width: calc(33vw + 13px)
-            height: 33vw
+            // width: calc(33vw + 13px)
+            // height: 33vw
+            // background: red
 
-            &:hover+.products__tiles__default-content
+            // li
+                // width: 33%
+                // background: blue
+
+            &:hover+.products__tiles__list__background--default
                     opacity: 0
                     transform: scale(1)
 
             &__title
-                width: 11vw
-                max-width: 200px
-                height: 11vw
-                max-height: 200px
+                // width: 11vw
+                // max-width: 200px
+                width: 210px
+                // height: 11vw
+                // max-height: 200px
+                height: 210px
                 margin: 0
                 padding: 5px
                 color: white
@@ -139,12 +117,20 @@
                     align-items: center
                     text-align: center
                     justify-content: center
+                    min-height: 60px
 
-                @media all and (max-width: 1850px)
-                    max-width: none
-                    width: 100%
-                    min-width: 375px
-                    height: 50px
+                // @media all and (max-width: 1850px)
+                    // max-width: none
+                    // width: 100%
+                    // min-width: 375px
+                    // height: 50px
+                
+                @media all and (max-width: 1450px)
+                    width: 40vw
+                    height: initial
+                    min-height: 50px
+
+                    // p
                 
                 &:hover
                     transform: scale(1.025)
@@ -164,6 +150,8 @@
                 height: 100%
                 z-index: -5
                 opacity: 0
+                display: flex
+                align-items: center
                 background-attachment: fixed
                 background-position: left
                 background-repeat: no-repeat
@@ -171,3 +159,7 @@
                 filter: grayscale(50%)
                 transform: scale(1.015)
                 transition: transform 1.5s ease, opacity 1s ease
+
+                &--default
+                    opacity: 1
+                    background-image: url('../img/products-background.jpg')
