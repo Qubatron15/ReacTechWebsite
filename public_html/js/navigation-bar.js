@@ -1,8 +1,8 @@
 let mainNavLinks = document.querySelectorAll("#navigation ul li a"),
-        websiteSections = document.querySelectorAll("section"),
-        navbar = document.querySelector("#navigation__links-container"),
-        navbarContainer = document.querySelector("#navigation"),
-        navbarOffset;
+    websiteSections = document.querySelectorAll("section"),
+    navbar = document.querySelector("#navigation nav"),
+    navbarContainer = document.querySelector("#navigation"),
+    navbarOffset;
 
 
 function setActiveNavLink() {
