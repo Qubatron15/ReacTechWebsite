@@ -36,14 +36,22 @@
                         <p>produkty</p>
                     </a>
                 </li>
-                <li class="pull-right navigation__list__item">
-                    <a href="#contact">
-                        <p data-phrase-id="changeLanguage" onclick="languative.changeLanguage('pl');">PL</p>
-                    </a>
+                <li id="language-selector" class="pull-right navigation__list__item language-selector">
+                    <ul class="language-selector__list">
+                        <li class="language-selector__list__item"
+                            data-phrase-id="languageSelectorActualLanguage">
+                        </li>
+                        <li id="pl"
+                            class="language-selector__list__item"
+                            onclick="selectLanguage(this)">PL</li>
+                        <li id="en"
+                            class="language-selector__list__item"
+                            onclick="selectLanguage(this)">EN</li>
+                    </ul>
                 </li>
                 <li class="pull-right navigation__list__item">
                     <a href="#contact">
-                        <p>kontakt</p>
+                        <p data-phrase-id="navigationContact">kontakt</p>
                     </a>
                 </li>
             </ul>
@@ -239,6 +247,7 @@
     <!-- multiple language support -->
     <script src="resources/languative.js"></script>
     <script src="js/languative-dictionary.js"></script>
+    <script src="js/language-selector.js"></script>
 </body>
 
 </html>

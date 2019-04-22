@@ -59,7 +59,7 @@
   box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.3);
   min-width: 940px;
 }
-.navigation.navigation-fixed-top .navigation__list__item:hover, .navigation.navigation-fixed-top .navigation__list__item .selected {
+.navigation.navigation-fixed-top .navigation__list__item:not(.language-selector):hover, .navigation.navigation-fixed-top .navigation__list__item:not(.language-selector) .selected {
   background: none;
   box-shadow: none;
 }
@@ -83,9 +83,24 @@
 .navigation__list__item:hover, .navigation__list__item .selected {
   color: #2aa8e0;
   background: white;
-  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 45px 60px -10px rgba(0, 0, 0, 0.3);
 }
 .navigation__list__item:hover p, .navigation__list__item .selected p {
+  transform: scale(1.1);
+}
+
+.language-selector__list {
+  width: 1.5em;
+}
+.language-selector__list:hover .language-selector__list__item {
+  display: block;
+}
+.language-selector__list__item:not(:first-child) {
+  display: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.language-selector__list__item:not(:first-child):hover {
   transform: scale(1.1);
 }
 
@@ -317,6 +332,10 @@ body .page-wrapper {
   width: 80%;
   max-width: 1100px;
   margin: auto;
+}
+
+.hidden {
+  display: none !important;
 }
 
 section h2 {

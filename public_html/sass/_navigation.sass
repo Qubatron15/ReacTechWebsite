@@ -14,7 +14,7 @@
         box-shadow: 0 30px 60px -10px $shadow-grey
         min-width: 940px
 
-        .navigation__list__item
+        .navigation__list__item:not(.language-selector)
             &:hover, .selected
                 background: none
                 box-shadow: none
@@ -39,7 +39,21 @@
             &:hover, .selected
                 color: $logo-bright-blue
                 background: white
-                box-shadow: 0 30px 60px -10px $shadow-grey
+                box-shadow: 0 45px 60px -10px $shadow-grey
 
                 p
                     transform: scale(1.1)
+
+.language-selector__list
+    width: 1.5em
+
+    &:hover .language-selector__list__item
+        display: block
+
+    &__item:not(:first-child)
+            display: none
+            margin-top: 30px
+            cursor: pointer
+
+            &:hover
+                transform: scale(1.1)

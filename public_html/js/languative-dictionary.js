@@ -1,7 +1,9 @@
 languative.modifyDictionary("pl", {
-    changeLanguage: "zmień na angielski"
+    languageSelectorActualLanguage: "PL",
+    navigationContact: "kontakt",
 });
 
 languative.modifyDictionary("en", {
-    changeLanguage: "change to polish"
+    languageSelectorActualLanguage: "EN",
+    navigationContact: "contact"
 });
