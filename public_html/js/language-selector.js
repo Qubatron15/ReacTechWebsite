@@ -1,5 +1,5 @@
-let languageSelectorListItems = document.querySelectorAll("#language-selector .language-selector__list__item")
-changeLanguageFunction = languative.changeLanguage;
+let languageSelectorListItems = document.querySelectorAll("#language-selector .language-selector__list__item"),
+    changeLanguageFunction = languative.changeLanguage;
 
 languative.changeLanguage = function (languageId) {
     changeLanguageFunction(languageId);
