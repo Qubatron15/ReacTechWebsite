@@ -53,7 +53,19 @@ languative.modifyDictionary('pl', {
     potrzebował komory procesowej. Projektujemy i wytwarzamy komory ciśnieniowe o objętości
     do 5l oraz ciśnieniu roboczym do 3000 bar. Chcesz wiedzieć więcej? Skontaktuj się z nami!`,
     productsMotto: `Nasza firma pomaga klientom którzy pracują z agresywnymi
-    substancjami, wysokimi ciśnieniami oraz niskimi i wysokimi temperaturami.`
+    substancjami, wysokimi ciśnieniami oraz niskimi i wysokimi temperaturami.`,
+
+    contactInquiries: 'Zapytania prosimy przesyłać na:',
+    contactOurProfessionals: 'Nasi specjaliści:',
+    contactTitleBsc: 'Inż.',
+    contactTitleMsc: 'Mgr inż.',
+    contactMobile1: 'Tel.',
+    contactMobile2: 'Tel.',
+    contactCompanyData: 'Dane firmy:',
+    contactFullName: 'Pełna nazwa firmy:',
+    contactAddress: 'Adres: ul. Rubież 46, 61-612 Poznań, POLSKA',
+    contactVat: 'NIP:',
+    contactCourtRegister: 'KRS:'
 });
 
 languative.modifyDictionary('en', {
@@ -63,7 +75,7 @@ languative.modifyDictionary('en', {
     navigationProducts: 'products',
     navigationContact: 'contact',
     
-    aboutHeader: 'about us',
+    aboutHeader: 'about',
     aboutParagraph1: `REACTECH was founded by two engineers who are not afraid of the challenges posed by
     the contemporary industry and the world of science. We face the growing market demands, thanks to
     knowledge and experience in materials engineering, high pressures, chemistry as well as machining and
@@ -108,5 +120,17 @@ languative.modifyDictionary('en', {
     process chamber. We design and manufacture pressure chambers with a volume up to 5l
     and working pressure up to 10000 bar. Do you want to know more? Contact us!`,
     productsMotto: `Our company helps clients who work with aggressive substances, high pressures,
-    low and high temperatures.`
+    low and high temperatures.`,
+
+    contactInquiries: 'Please send your inquiries to:',
+    contactOurProfessionals: 'Our professionals:',
+    contactTitleBsc: 'BSc.',
+    contactTitleMsc: 'MSc.',
+    contactMobile1: 'Mobile.',
+    contactMobile2: 'Mobile.',
+    contactCompanyData: 'Company data:',
+    contactFullName: 'Full name of the company:',
+    contactAddress: 'Address: ul. Rubież 46, 61-612 Poznań, POLAND',
+    contactVat: 'VAT:',
+    contactCourtRegister: 'National court register:'
 });
