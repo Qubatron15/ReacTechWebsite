@@ -45,12 +45,13 @@
 #navigation {
   height: 65px;
 }
-#navigation__links-container {
+
+.navigation {
   z-index: 500;
   width: 100%;
   height: 65px;
 }
-#navigation__links-container.navigation-fixed-top {
+.navigation.navigation-fixed-top {
   top: 0;
   left: 0;
   position: fixed;
@@ -58,17 +59,17 @@
   box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.3);
   min-width: 940px;
 }
-#navigation__links-container.navigation-fixed-top ul li:hover, #navigation__links-container.navigation-fixed-top ul li .selected {
+.navigation.navigation-fixed-top .navigation__list__item:not(.language-selector):hover, .navigation.navigation-fixed-top .navigation__list__item:not(.language-selector) .selected {
   background: none;
   box-shadow: none;
 }
-#navigation__links-container ul {
+.navigation__list {
   list-style-type: none;
 }
-#navigation__links-container ul li {
+.navigation__list__item {
   float: left;
 }
-#navigation__links-container ul li a {
+.navigation__list__item > * {
   text-align: center;
   padding: 20px 30px;
   display: block;
@@ -76,15 +77,33 @@
   font-size: 25px;
   color: #686868;
 }
-#navigation__links-container ul li.pull-right {
+.navigation__list__item.pull-right {
   float: right;
 }
-#navigation__links-container ul li:hover, #navigation__links-container ul li .selected {
+.navigation__list__item:hover, .navigation__list__item .selected {
   color: #2aa8e0;
   background: white;
-  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 45px 60px -10px rgba(0, 0, 0, 0.3);
 }
-#navigation__links-container ul li:hover p, #navigation__links-container ul li .selected p {
+.navigation__list__item:hover p, .navigation__list__item .selected p {
+  transform: scale(1.1);
+}
+
+.language-selector__list {
+  width: 1.5em;
+}
+.language-selector__list:hover .language-selector__list__item {
+  display: block;
+}
+.language-selector__list:hover .language-selector__list__item:first-child {
+  color: #2aa8e0;
+}
+.language-selector__list__item:not(:first-child) {
+  display: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.language-selector__list__item:not(:first-child):hover {
   transform: scale(1.1);
 }
 
@@ -316,6 +335,10 @@ body .page-wrapper {
   width: 80%;
   max-width: 1100px;
   margin: auto;
+}
+
+.hidden {
+  display: none !important;
 }
 
 section h2 {

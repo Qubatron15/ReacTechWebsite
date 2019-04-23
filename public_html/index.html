@@ -19,31 +19,52 @@
     </div>
 
     <div id="navigation">
-        <nav id="navigation__links-container">
-            <ul class="content">
-                <li><a href="#header">
+        <nav class="navigation">
+            <ul class="content navigation__list">
+                <li class="navigation__list__item">
+                    <a href="#header">
                         <p><i class="fa fa-home"></i></p>
-                    </a></li>
-                <li><a href="#about">
-                        <p>o nas</p>
-                    </a></li>
-                <li><a href="#products">
-                        <p>produkty</p>
-                    </a></li>
-                <li class="pull-right"><a href="#contact">
-                        <p>kontakt</p>
-                    </a></li>
+                    </a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#about">
+                        <p data-phrase-id="navigationAbout">o nas</p>
+                    </a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="#products">
+                        <p data-phrase-id="navigationProducts">produkty</p>
+                    </a>
+                </li>
+                <li id="language-selector" class="pull-right navigation__list__item language-selector">
+                    <ul class="language-selector__list">
+                        <li class="language-selector__list__item"
+                            data-phrase-id="languageSelectorActualLanguage">
+                        </li>
+                        <li id="pl"
+                            class="language-selector__list__item"
+                            onclick="selectLanguage(this)">PL</li>
+                        <li id="en"
+                            class="language-selector__list__item"
+                            onclick="selectLanguage(this)">EN</li>
+                    </ul>
+                </li>
+                <li class="pull-right navigation__list__item">
+                    <a href="#contact">
+                        <p data-phrase-id="navigationContact">kontakt</p>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
 
     <section id="about" class="content">
-        <h2>o nas</h2>
-        <p>REACTECH został założony przez dwóch inżynierów nie bojących się wyzwań jakie niesie współczesny
+        <h2 data-phrase-id="aboutHeader">o nas</h2>
+        <p data-phrase-id="aboutParagraph1">REACTECH został założony przez dwóch inżynierów nie bojących się wyzwań jakie niesie współczesny
             przemysł oraz świat nauki. Stawiamy czoła rosnącym wymaganiom rynku, dzięki wiedzy i
             doświadczeniu w dziedzinie inżynierii materiałowej, wysokich ciśnień, chemii oraz obróbki i doboru
             materiałów specjalnych.</p>
-        <p>Nasze produkty znajdują zastosowania w branżach takich jak przemysł chemiczny, farmaceutyka,
+        <p data-phrase-id="aboutParagraph2">Nasze produkty znajdują zastosowania w branżach takich jak przemysł chemiczny, farmaceutyka,
             biotechnologia, przemysł spożywczy, petrochemia oraz we wszelkiego typu laboratoriach
             badawczych.</p>
     </section>
@@ -51,122 +72,125 @@
     <section id="products">
         <div class="products page-wrapper">
             <div class="products__tiles">
-                <h3 class="products__tiles__title">Dostarczamy między innymi:</h3>
+                <h3 class="products__tiles__title" data-phrase-id="productsHeader">Dostarczamy między innymi:</h3>
                 <div class="products__tiles__backdrop"></div>
                 <ul class="products__tiles__list">
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Reaktory do mechanicznej syntezy</p>
+                            <p data-phrase-id="productsReactorsMechanical">Reaktory do mechanicznej syntezy</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small">REACTECH projektuje oraz wykonuje
-                                reaktory do mechanicznej syntezy. Nasze
+                            <h3 class="products__caption products__caption--small" data-phrase-id="productsReactorsMechanicalCaption">
+                                REACTECH projektuje oraz wykonuje reaktory do mechanicznej syntezy. Nasze
                                 doświadczenie i szczegółowe podejście w zakresie projektowania oraz doboru materiałów
                                 są gwarancją Twojego sukcesu. Wraz z reaktorami dostarczamy również kule do mielenia.
-                                Chcesz wiedzieć więcej? Skontaktuj się z nami!</h3>
+                                Chcesz wiedzieć więcej? Skontaktuj się z nami!
+                            </h3>
                         </div>
                     </li>
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Naczynia do mielenia</p>
+                            <p data-phrase-id="productsMillingVessels">Naczynia do mielenia</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small">Projektujemy oraz dostarczamy
-                                naczynia do mielenia oraz mielniki dostosowane do Twoich
-                                wymagań. Działamy na objętościach do 5 litrów.
-                                Chcesz wiedzieć więcej? Skontaktuj się z nami!</h3>
+                            <h3 class="products__caption products__caption--small" data-phrase-id="productsMillingVesselsCaption">
+                                Projektujemy oraz dostarczamy naczynia do mielenia oraz mielniki dostosowane do Twoich
+                                wymagań. Działamy na objętościach do 5 litrów. Chcesz wiedzieć więcej? Skontaktuj się z nami!
+                            </h3>
                         </div>
                     </li>
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Reaktory chemiczne</p>
+                            <p data-phrase-id="productsReactorsChemical">Reaktory chemiczne</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small">Synteza hydrotermalna? Synteza
-                                wspomagana promieniowaniem mikrofalowym? Jeśli te
+                            <h3 class="products__caption products__caption--small" data-phrase-id="productsReactorsChemicalCaption">
+                                Synteza hydrotermalna? Synteza wspomagana promieniowaniem mikrofalowym? Jeśli te
                                 pojęcia przewijają się w Twoim projekcie możesz sporo zyskać kontaktując się z nami.
-                                Dostarczamy naczynia do przeprowadzania reakcji w powyższych jak i wielu innych
-                                metodach.</h3>
+                                Dostarczamy naczynia do przeprowadzania reakcji w powyższych jak i wielu innych metodach.
+                            </h3>
                         </div>
                     </li>
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Autoklawy wysokociśnieniowe</p>
+                            <p data-phrase-id="productsHighPressureAutoclaves">Autoklawy wysokociśnieniowe</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small">Czy Twoja aplikacja wymaga poddania
-                                reagentów bądź produktu działaniu wysokiego
-                                ciśnienia przez dłuższy czas? Jeśli tak możemy pomóc.
-                                Chcesz wiedzieć więcej? Skontaktuj się z nami!</h3>
+                            <h3 class="products__caption products__caption--small" data-phrase-id="productsHighPressureAutoclavesCaption">
+                                Czy Twoja aplikacja wymaga poddania reagentów bądź produktu działaniu wysokiego
+                                ciśnienia przez dłuższy czas? Jeśli tak możemy pomóc. Chcesz wiedzieć więcej? Skontaktuj się z nami!
+                            </h3>
                         </div>
                     </li>
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Komory wysokociśnieniowe</p>
+                            <p data-phrase-id="productsHighPressureChambers">Komory wysokociśnieniowe</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small">Czy Twoja aplikacja wymaga poddania
-                                reagentów bądź produktu działaniu wysokiego
-                                ciśnienia przez dłuższy czas? Jeśli tak możemy pomóc.
-                                Skontaktuj się z nami i opisz swoją aplikację!</h3>
+                            <h3 class="products__caption products__caption--small" data-phrase-id="productsHighPressureChambersCaption">
+                                Czy Twoja aplikacja wymaga poddania vreagentów bądź produktu działaniu wysokiego
+                                ciśnienia przez dłuższy czas? Jeśli tak możemy pomóc. Skontaktuj się z nami i opisz swoją aplikację!
+                            </h3>
                         </div>
                     </li>
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Reaktory wysokociśnieniowe</p>
+                            <p data-phrase-id="productsHighPressureReactors">Reaktory wysokociśnieniowe</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small">Potrzebujesz naczynia w którym
-                                mógłbyś przeprowadzić reakcję chemiczną? W grę
+                            <h3 class="products__caption products__caption--small" data-phrase-id="productsHighPressureReactorsCaption">
+                                Potrzebujesz naczynia w którym mógłbyś przeprowadzić reakcję chemiczną? W grę
                                 wchodzi wysokie ciśnienie, wysoka temperatura lub problematyczne reagenty? Pozwól
                                 sobie pomóc. Skontaktuj się z nami i opisz swoją aplikację.
                                 Projektujemy i wytwarzamy reaktory laboratoryjne o objętościach do 5l oraz ciśnieniu
-                                roboczym do 3000 bar.</h3>
+                                roboczym do 3000 bar.
+                            </h3>
                         </div>
                     </li>
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Naczynia do spiekania w niskich temperaturach pod wysokim ciśnieniem</p>
+                            <p data-phrase-id="productsSinteringVessels">Naczynia do spiekania w niskich temperaturach pod wysokim ciśnieniem</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small products__caption--white">Tak samo jak w przypadku naszych
-                                reaktorów i autoklawów jesteśmy w stanie zaoferować
+                            <h3 class="products__caption products__caption--small products__caption--white" data-phrase-id="productsSinteringVesselsCaption">
+                                Tak samo jak w przypadku naszych reaktorów i autoklawów jesteśmy w stanie zaoferować
                                 naczynia do izostatycznego prasowania oraz spiekania w niskich temperaturach.
-                                Projektujemy i wytwarzamy komory ciśnieniowe o objętości do 5l oraz ciśnieniu roboczym
-                                do
-                                3000 bar.
-                                Chcesz wiedzieć więcej? Skontaktuj się z nami!</h3>
+                                Projektujemy i wytwarzamy komory ciśnieniowe o objętości do 5l oraz ciśnieniu roboczym do 3000 bar.
+                                Chcesz wiedzieć więcej? Skontaktuj się z nami!
+                            </h3>
                         </div>
                     </li>
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Naczynia wysokotemperaturowe oraz kriogeniczne</p>
+                            <p data-phrase-id="productsTemperatureCryogenicVessels">Naczynia wysokotemperaturowe oraz kriogeniczne</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small products__caption--white">Jeśli Twój projekt wymaga naczynia
-                                pracującego z wysokimi bądź ekstremalnie niskimi
-                                temperaturami zwróć się do nas. Jesteśmy w stanie zaprojektować i wyprodukować
-                                dokładnie to czego potrzebujesz.
-                                Chcesz wiedzieć więcej? Skontaktuj się z nami!</h3>
+                            <h3 class="products__caption products__caption--small products__caption--white" data-phrase-id="productsTemperatureCryogenicVesselsCaption">
+                                Jeśli Twój projekt wymaga naczynia pracującego z wysokimi bądź ekstremalnie niskimi
+                                temperaturami zwróć się do nas. Jesteśmy w stanie zaprojektować i wyprodukować dokładnie to czego potrzebujesz.
+                                Chcesz wiedzieć więcej? Skontaktuj się z nami!
+                            </h3>
                         </div>
                     </li>
                     <li>
                         <div class="products__tiles__list__title">
-                            <p>Naczynia do ekstrakcji nadkrytycznej</p>
+                            <p data-phrase-id="productsSupercriticalExtraction">Naczynia do ekstrakcji nadkrytycznej</p>
                         </div>
                         <div class="products__tiles__list__background">
-                            <h3 class="products__caption products__caption--small products__caption--white">Chcesz uruchomić laboratoryjny układ
-                                ekstrakcji nadkrytycznej? Na pewno będziesz
+                            <h3 class="products__caption products__caption--small products__caption--white" data-phrase-id="productsSupercriticalExtractionCaption">
+                                Chcesz uruchomić laboratoryjny układ ekstrakcji nadkrytycznej? Na pewno będziesz
                                 potrzebował komory procesowej. Projektujemy i wytwarzamy komory ciśnieniowe o objętości
-                                do 5l oraz ciśnieniu roboczym do 3000 bar.
-                                Chcesz wiedzieć więcej? Skontaktuj się z nami!</h3>
+                                do 5l oraz ciśnieniu roboczym do 3000 bar. Chcesz wiedzieć więcej? Skontaktuj się z nami!
+                            </h3>
                         </div>
                     </li>
                 </ul>
                 <!-- <div class="products__tiles__default-content"> -->
                 <div class="products__tiles__list__background products__tiles__list__background--default">
-                    <h3 class="products__caption">Nasza firma pomaga klientom którzy pracują z agresywnymi
-                        substancjami, wysokimi ciśnieniami oraz niskimi i wysokimi temperaturami.</h3>
+                    <h3 class="products__caption" data-phrase-id="productsMotto">
+                        Nasza firma pomaga klientom którzy pracują z agresywnymi
+                        substancjami, wysokimi ciśnieniami oraz niskimi i wysokimi temperaturami.
+                    </h3>
                 </div>
             </div>
         </div>
@@ -176,23 +200,37 @@
         <div class="contact">
             <div class="page-wrapper">
                 <div class="contact__specialists">
-                    <h3>Zapytania prosimy przesyłać na:</h3>
+                    <h3 data-phrase-id="contactInquiries">Zapytania prosimy przesyłać na:</h3>
                     <p>Email: Office@reactech.pl</p>
 
-                    <h3>Nasi specjaliści:</h3>
-                    <p>Inż. Mateusz Firynowicz</p>
-                    <p>Tel. +48 724 845 950</p>
+                    <h3 data-phrase-id="contactOurProfessionals">Nasi specjaliści:</h3>
+                    <p>
+                        <span data-phrase-id="contactTitleBsc">Inż.</span> Mateusz Firynowicz
+                    </p>
+                    <p>
+                        <span data-phrase-id="contactMobile1">Tel.</span> +48 724 845 950
+                    </p>
                     <br>
-                    <p>Mgr inż. Wojciech Żerkowski</p>
-                    <p>Tel. +48 607 494 611</p>
+                    <p>
+                        <span data-phrase-id="contactTitleMsc">Mgr inż.</span> Wojciech Żerkowski
+                    </p>
+                    <p data-phrase-id="contactMobile">
+                        <span data-phrase-id="contactMobile2">Tel.</span> +48 607 494 611
+                    </p>
                 </div>
 
                 <div class="contact__company">
-                    <h3>Dane firmy:</h3>
-                    <p>Pełna nazwa firmy: REACTECH FIRYNOWICZ ŻERKOWSKI Spółka Jawna</p>
-                    <p>Adres: ul. Rubież 46, 61-612 Poznań, POLSKA</p>
-                    <p>NIP: 972-129-50-36</p>
-                    <p>KRS: 0000752716</p>
+                    <h3 data-phrase-id="contactCompanyData">Dane firmy:</h3>
+                    <p>
+                        <span data-phrase-id="contactFullName">Pełna nazwa firmy:</span> REACTECH FIRYNOWICZ ŻERKOWSKI Spółka Jawna
+                    </p>
+                    <p data-phrase-id="contactAddress">Adres: ul. Rubież 46, 61-612 Poznań, POLSKA</p>
+                    <p>
+                        <span data-phrase-id="contactVat">NIP:</span> 972-129-50-36
+                    </p>
+                    <p>
+                        <span data-phrase-id="contactCourtRegister">KRS:</span> 0000752716
+                    </p>
                     <p>Email: Office@reactech.pl</p>
                 </div>
 
@@ -222,6 +260,11 @@
     <script src="js/cookie-information.js"></script>
     <script src="js/navigation-bar.js"></script>
     <script src="js/products.js"></script>
+    
+    <!-- multiple language support -->
+    <script src="resources/languative.js"></script>
+    <script src="js/languative-dictionary.js"></script>
+    <script src="js/language-selector.js"></script>
 </body>
 
 </html>
